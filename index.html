@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipster Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+     
+
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body { padding-top: 10px; }
+
+        
+    </style>
+  </head>
+  <body>
+<div class="container-fluid">
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">titles are cool</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="row">
+ 
+ <div class="col-md-6">
+     <img class="slideRight img-circle hero img-responsive center-block" src="http://placehold.it/480x480" />
+  </div>
+  
+  <div class="col-md-6">
+     <h2>#HipsterLandingPage</h2>   
+       <p class="lead">Banjo yr drinking vinegar fixie Neutra. Direct trade sustainable beard mustache cliche, aesthetic seitan selfies. Banh mi art party Tonx, cred hoodie bicycle rights squid 3 wolf moon fanny pack synth authentic.</p>
+      <button type="button" class="btn btn-warning btn-wide"><a href="#">Sign Up</a></button> 
+     <button type="button" class="btn btn-default btn-wide"><a href="#">Learn More</a></button>
+     <p></p>
+  </div>
+</div>
+
+<hr />
+
+<div class="row center">
+  <div class="col-md-6">
+    <h1 class="center">iPhone YOLO ugh</h1>
+    <p class="lead">aesthetic pickled mustache viral. Hoodie flannel viral slow-carb Portland, +1 ethnic occupy kogi photo booth church-key four loko. Synth direct trade Neutra aesthetic.</p>
+    <p class="lead">Polaroid meggings hashtag retro, viral 3 wolf moon authentic VHS Helvetica before they sold out small batch. Brooklyn Odd Future gentrify tote bag disrupt sriracha, Schlitz Williamsburg butcher dreamcatcher selvage.</p> 
+  </div>
+ 
+  <div class="col-md-6">
+    <img id="firstPic" class="img-circle img-responsive center-block" src="http://placehold.it/480x480" />
+  </div>  
+</div>
+
+<hr />
+
+
+
+<div class="row center palette-wet-asphalt">
+    <div class="col-md-4">
+      <h1 class="cloud-font">pabst</h1>
+       <img class="img-circle" src="http://placehold.it/250x250" /><br /><br />
+       <button type="button" class="btn btn-success btn-wide">Click me?</button>
+       <p></p>
+    </div>  
+     <div class="col-md-4">
+      <h1 class="cloud-font">blue</h1>
+       <img class="img-circle" src="http://placehold.it/250x250" /><br /><br />
+       <button type="button" class="btn btn-success btn-wide">Click me?</button>
+       <p></p>
+    </div>
+     <div class="col-md-4">
+      <h1 class="cloud-font">ribbon</h1>
+       <img class="img-circle" src="http://placehold.it/250x250" /><br /><br />
+       <button type="button" class="btn btn-success btn-wide">Click me?</button>
+       <p></p>
+    </div>
+</div>
+
+ <div class="row">
+
+  <div class="col-md-6">
+    <img class="img-circle img-responsive hero center-block" src="http://placehold.it/480x480" />
+    <p></p>
+  </div> 
+
+ <div class="col-md-6">
+    <h1 class="center">Wes Anderson artisan banjo</h1>
+    <p class="lead">small batch hella mlkshk asymmetrical. DIY organic you probably haven't heard of them polaroid, sartorial mustache scenester 90's Etsy Tumblr selvage Schlitz bitters plaid.</p>
+    <center><button type="button" class="btn btn-warning btn-wide"><a href="">Sign Up</a></button> </center> <p></p>
+
+    </div>
+  
+</div>
+
+<div class="row palette-wet-asphalt">
+  <div class="col-md-12 center">
+    <p class="cloud-font">footer</p>
+  </div>
+</div>
+
+</div>
+
+
+<script>
+  $(window).scroll(function() {
+    $('#firstPic').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+200) {
+        $(this).addClass("slideUp");
+      }
+    });
+  });
+</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
